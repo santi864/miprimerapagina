@@ -1,0 +1,323 @@
+/*CSS GENERICO*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+.fuente-clara {color: #eeeeee;}
+
+.fuente-acento {color: #b59a61;}
+
+/*sección inicio*/
+header {
+    background-color: darkolivegreen;
+    color: #fff;
+    padding: 20px;   
+    position: fixed; 
+    z-index: 7;    
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    header {
+        background-color: #b59a61;
+    }
+
+}
+  
+  header h1.logo {
+    background-color: darkolivegreen;
+    font-size: 35px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 80px;
+    padding: 0 50px;
+  }
+  
+  @media (max-width: 768px) {
+    header h1.logo {
+        background-color: #b59a61;
+    }
+  }
+
+  header nav {
+    font-size: large;
+    float: right;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    background-color: darkolivegreen;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul li {
+        background-color: #b59a61;
+    }
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+  }
+
+/*sección acerca de mi*/
+main {
+    padding: 10px;
+    padding-top: 120px;
+    border: 3px solid grey;
+    background-color: bisque;
+    width: 100%;
+}
+
+h2 {
+    color: #22211f; 
+    text-align: center;
+    background-color: bisque;
+    font-size: 26px;
+    margin: 10px;
+    position: relative;
+    right: 200px;
+    top: 100px;
+    left: 20%;
+    width: 30%;
+}
+
+.fuente-oscura {
+    color: #22211f; 
+    text-align: center;
+    width: 30%;
+    background-color: bisque;
+    font-size: 17px;
+    margin: 10px;
+    position: relative;
+    left: 20%;
+    bottom: 100px;
+}
+
+.santiago {
+    display: block;
+    margin: auto;
+    border-radius: 5%;
+    z-index: 6;
+    position: relative;
+    left: 200px;
+    top: 20px;
+}
+
+/*sección comida favorita*/
+.comida-fav {
+    padding: 10px;
+    border: 3px solid;
+    background-color: cadetblue;
+}
+
+h3, ol, li {
+    font-family:cursive;
+    background-color: cadetblue;
+}
+
+
+/*sección hobbies*/
+.mis-hobbies {
+    background-color: darkslategray;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h4 {
+    background-color: darkslategray;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.img-hobby {
+    border-radius: 20% 20%;
+    background-color: darkslategray;
+
+}
+
+.imagen1, .imagen2, .imagen3 {
+    background-color: darkslategray;
+    text-align: center;
+    padding-bottom: 10%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/*sección url*/
+footer {
+    padding: 40px;
+    border: 3px solid grey;
+    background-color: orange;
+    width: 100%;
+    clear: both;
+}
+
+a {
+    background-color: orange;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid black ;
+    clear: both;
+}
+
+a:hover {
+    background-color: coral;
+}
+
+
+
+/*sección formulario*/
+
+.form-header {
+  text-align: center;
+  background-color: dimgray;
+  border: 2px solid black;
+  font-family:'Times New Roman', Times, serif;
+
+  width: 100%;
+  padding: 0px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  background-color: dimgray;
+  border: 1px solid black;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 40px 40px 40px 40px;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"], 
+.form-row input[type="email"]  {
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+  .form-header {
+    padding: 50px;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type="text"] {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+
+  width: 100%;
+}
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row textarea {
+    width: 250px;
+  }
+
+  
+  .form-row button {
+      font-size: 16px;
+      font-weight: bold;
+    
+    
+      color: #ffffff;
+      background-color: #5995da;
+    
+    
+      border: none;
+      border-radius: 3px;
+    
+    
+      padding: 10px 40px;
+      cursor: pointer;
+    }
+    
+    
+    .form-row button:hover {
+      background-color: #76aeed;
+    }
+    
+    
+    .form-row button:active {
+      background-color: #407fc7;
+    }
+    
+    
+    /* ------------- Para Pantallas de más de 700px ------------- */
+    
+    
+    .form-row button {
+        margin-left: 0px;
+      
+    }
+
+    .alertas{
+      color: red;
+      text-align: center;
+    }
